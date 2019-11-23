@@ -12,9 +12,10 @@ The "SecretKey" acts the same as the [access key for Azure SignalR Service](http
 
 2. Build and launch the webserver.
    
-   For the binary, an argument ` --url=http://hostname:port` can be used to specify the listening IP and port. By default, http://localhost:5000 will be listened. For example, 
+   For the binary, the argument `--urls` can be used to specify the listening IP and port. By default, http://localhost:5000 & https://localhost:5001 will be listened. For example, 
 ```
-"Local Serverless SignalR Core.exe" --url=http:/127.0.0.1:7777
+"Local Serverless SignalR Core.exe" --url=http://127.0.0.1:7777
+"Local Serverless SignalR Core.exe" --url=http://127.0.0.1:7777;https://127.0.0.1:7778
 ```
 
 ## Negotiation
