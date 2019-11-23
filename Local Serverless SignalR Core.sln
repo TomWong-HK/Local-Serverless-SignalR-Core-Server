@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Local Serverless SignalR Core", "Azure Serverless SignalR Core Emulator\Local Serverless SignalR Core.csproj", "{D834460F-8A89-46B3-87E8-5CAD4171F719}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D834460F-8A89-46B3-87E8-5CAD4171F719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D834460F-8A89-46B3-87E8-5CAD4171F719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D834460F-8A89-46B3-87E8-5CAD4171F719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D834460F-8A89-46B3-87E8-5CAD4171F719}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C7470A9-5DD3-4646-BA0D-087EF3BFDA0B}
+	EndGlobalSection
+EndGlobal
