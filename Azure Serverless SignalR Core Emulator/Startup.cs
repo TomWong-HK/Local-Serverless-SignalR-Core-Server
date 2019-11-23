@@ -65,12 +65,12 @@ namespace Azure_Serverless_SignalR_Core_Emulator
                         }
                         return Task.CompletedTask;
                     },
-                    // Vaildate the audiance here.
+                    // Vaildate the audience here.
                     OnTokenValidated = (context) =>
                     {    
                         string aud = context.Principal.Claims.FirstOrDefault(x => x.Type == "aud")?.Value;
                         if (aud == null)
-                            context.Fail("No audiance in JWT");
+                            context.Fail("No audience in JWT");
                         if (context.Request.Path.StartsWithSegments(new Microsoft.AspNetCore.Http.PathString(SIGNALR_ROUTE)))
                         {
                             string targetedHub = context.Request.Query["hub"];
@@ -82,7 +82,7 @@ namespace Azure_Serverless_SignalR_Core_Emulator
                             return Task.CompletedTask;
                         }
                         if (aud != $"{context.Request.Scheme}://{context.Request.Host}{context.Request.Path}{context.Request.QueryString}")
-                            context.Fail("Audiance mismatch with the requested url");
+                            context.Fail("Audience mismatch with the requested url");
                         return Task.CompletedTask;
                     }
                 };
